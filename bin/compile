@@ -1,0 +1,9 @@
+#!/bin/sh
+
+echo "-----> Installing proximo"
+
+BUILD_DIR=$1
+DOWNLOAD_URL="http://downloads.proximo.io/proximo-stacklet.tgz"
+
+cd $BUILD_DIR
+curl -L --silent $DOWNLOAD_URL | tar xz
